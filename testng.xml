@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Inteview Test" verbose="2">
+    <test name="Search at Google">
+        <parameter name = "testParam" value = "Webdriver" />
+        <classes>
+            <class name="seleniumTests.SeleniumTest">
+                <methods>
+                    <include name="googleTestResults"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Search at Google using move over functionality to locate the keyword">
+        <parameter name = "testParam" value = "Webdriver" />
+        <classes>
+            <class name="seleniumTests.SeleniumTest">
+                <methods>
+                    <include name="searchOnGoogleUsingMoveOverFunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
