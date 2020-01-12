@@ -3,19 +3,9 @@
     <test name="Search at Google">
         <parameter name = "testParam" value = "Webdriver" />
         <classes>
-            <class name="seleniumTests.SeleniumTest">
+            <class name="seleniumTests.saucedemo.SauceDemo">
                 <methods>
-                    <include name="googleTestResults"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <test name="Search at Google using move over functionality to locate the keyword">
-        <parameter name = "testParam" value = "Webdriver" />
-        <classes>
-            <class name="seleniumTests.SeleniumTest">
-                <methods>
-                    <include name="searchOnGoogleUsingMoveOverFunctionality"/>
+                    <include name="LoginTest"/>
                 </methods>
             </class>
         </classes>

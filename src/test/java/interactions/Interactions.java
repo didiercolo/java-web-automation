@@ -103,4 +103,11 @@ public class Interactions {
     public void quit() {
         this.driver.quit();
     }
+
+    /**
+     * Get URL the browser window
+     */
+    public String getURLString() {
+       return this.driver.getCurrentUrl();
+    }
 }
